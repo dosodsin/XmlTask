@@ -14,9 +14,9 @@ public class XsltTransformation {
 
     private static final Logger logger = LogManager.getLogger();
 
-    static String firstXml = "src/main/outputFiles/test.xml";
-    static String xsltFile = "src/main/transformationFiles/xmlTransformation.xslt";
-    static String secondXml = "src/main/outputFiles/xmlAfterXslt.xml";
+    static String firstXml = "src/main/resources/config/test.xml";
+    static String xsltFile = "src/main/resources/xslt/xmlTransformation.xslt";
+    static String secondXml = "src/main/resources/config/xmlAfterXslt.xml";
 
     public static void transformXmlFile() {
 

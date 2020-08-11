@@ -6,9 +6,11 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Transformation/CsvTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transformation/CsvTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Transformation/XmlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transformation/XmlBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Transformation/XsltTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transformation/XsltTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Xml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/transformationFiles/csvTransformation.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/csvTransformation.xslt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/transformationFiles/xmlTransformation.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xmlTransformation.xslt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/outputFiles/csvAfterXslt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/csvAfterXslt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/outputFiles/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/outputFiles/xmlAfterXslt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/xmlAfterXslt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/csvTransformation.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xslt/csvTransformation.xslt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xmlTransformation.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xslt/xmlTransformation.xslt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\resources\config" />
+      <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\resources\xslt" />
       <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\resources" />
       <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\transformationFiles" />
       <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\outputFiles" />
@@ -87,6 +91,8 @@
       <workItem from="1597045901383" duration="25000" />
       <workItem from="1597073205107" duration="69000" />
       <workItem from="1597130172207" duration="2046000" />
+      <workItem from="1597134229499" duration="20000" />
+      <workItem from="1597134417370" duration="622000" />
     </task>
     <servers />
   </component>
@@ -98,10 +104,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1477" y="173" key="#Project_Structure/0.0.2560.1040@0.0.2560.1040" timestamp="1596966004453" />
-    <state x="1665" y="269" key="FileChooserDialogImpl" timestamp="1596968902605">
+    <state x="1665" y="269" key="FileChooserDialogImpl" timestamp="1597134247116">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1665" y="269" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1596968902605" />
+    <state x="1665" y="269" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1597134247116" />
     <state width="1277" height="263" key="GridCell.Tab.0.bottom" timestamp="1596969901303">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

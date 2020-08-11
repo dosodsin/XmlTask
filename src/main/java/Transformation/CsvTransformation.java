@@ -15,9 +15,9 @@ import java.io.IOException;
 
 public class CsvTransformation {
 
-    static String secondXml = "src/main/outputFiles/xmlAfterXslt.xml";
-    static String csvTransform = "src/main/transformationFiles/csvTransformation.xslt";
-    static String csvFile = "src/main/outputFiles/csvAfterXslt.csv";
+    static String secondXml = "src/main/resources/config/xmlAfterXslt.xml";
+    static String csvTransform = "src/main/resources/xslt/csvTransformation.xslt";
+    static String csvFile = "src/main/resources/config/csvAfterXslt.csv";
 
     public static void doTransformXlsToCsv() throws TransformerException, IOException, ParserConfigurationException, SAXException {
 

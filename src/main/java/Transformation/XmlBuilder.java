@@ -21,7 +21,7 @@ public class XmlBuilder {
     private static final Logger logger = LogManager.getLogger();
 
     static String[] elements = {"ID_ART", "NAME", "CODE", "GUID", "USERNAME"};
-    static String firstXml = "src/main/outputFiles/test.xml";
+    static String firstXml = "src/main/resources/config/test.xml";
     private static Document document;
     private static Connection connection;
     private static Statement statement;
