@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="sqlConnectionFactory" class="DB.SqlConnectionFactory"/>
+
+    <bean id="createSqlConnection" class="java.sql.Connection"
+          factory-bean="sqlConnectionFactory"
+          factory-method="getConnection">
+
+        <constructor-arg index="0" value="${db.url}"/>
+        <constructor-arg index="1" value="${db.login}"/>
+        <constructor-arg index="2" value="${db.password}"/>
+    </bean>
+
+    <bean id="xmlBuilder" class="Transformation.XmlBuilder">
+        <property name="firstXml" value="${firstXml.file}"/>
+    </bean>
+
+    <bean id="xsltTransformation" class="Transformation.XsltTransformation">
+        <property name="firstXml" value="${firstXml.file}"/>
+        <property name="secondXml" value="${secondXml.file}"/>
+        <property name="xsltFile" value="${xsltTransform.file}"/>
+    </bean>
+
+    <bean id="csvTransformation" class="Transformation.CsvTransformation">
+        <property name="csvFile" value="${csv.file}"/>
+        <property name="secondXml" value="${secondXml.file}"/>
+        <property name="csvTransform" value="${csvTransform.file}"/>
+    </bean>
+
+    <bean id="xmlTransformation" class="Transformation.Transform" init-method="transform">
+        <property name="connection" ref="createSqlConnection"/>
+    </bean>
+
+
+</beans>

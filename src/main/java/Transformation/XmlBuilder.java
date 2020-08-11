@@ -14,32 +14,30 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.sql.*;
 
-import static DB.SqlConnectionFactory.getConnection;
-
 public class XmlBuilder {
 
     private static final Logger logger = LogManager.getLogger();
 
-    static String[] elements = {"ID_ART", "NAME", "CODE", "GUID", "USERNAME"};
-    static String firstXml = "src/main/resources/config/test.xml";
-    private static Document document;
-    private static Connection connection;
-    private static Statement statement;
-    private static ResultSet resultSet;
+    String[] elements = {"ID_ART", "NAME", "CODE", "GUID", "USERNAME"};
+    String firstXml;
 
-    public static Document buildDocument() {
+    public String getFirstXml() {
+        return firstXml;
+    }
+
+    public void setFirstXml(String firstXml) {
+        this.firstXml = firstXml;
+    }
+
+    public Document buildDocument(ResultSet resultSet) {
 
         try {
 
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-            document = documentBuilder.newDocument();
+            Document document = documentBuilder.newDocument();
             Element articles = document.createElement("articles");
             document.appendChild(articles);
-
-            connection = getConnection();
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery("select ID_ART,NAME,CODE,GUID,USERNAME from test");
 
             while (resultSet.next()) {
                 Element article = document.createElement("article");
@@ -59,7 +57,7 @@ public class XmlBuilder {
         return null;
     }
 
-    public static void documentToXml() {
+    public void documentToXml(Document document) {
         DOMSource domSource = new DOMSource(document);
         try {
             Transformer transformer = TransformerFactory.newInstance().newTransformer();

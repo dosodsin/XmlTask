@@ -1,21 +1,9 @@
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
-import java.io.IOException;
-
-import static Transformation.CsvTransformation.doTransformXlsToCsv;
-import static Transformation.XmlBuilder.buildDocument;
-import static Transformation.XmlBuilder.documentToXml;
-import static Transformation.XsltTransformation.transformXmlFile;
-
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 
-    public static void main(String[] args) throws TransformerException, ParserConfigurationException, SAXException, IOException {
-        buildDocument();
-        documentToXml();
-        transformXmlFile();
-        doTransformXlsToCsv();
+    public static void main(String[] args) {
+        ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("src/main/springConfig/applicationContext.xml");
+        context.start();
     }
 }

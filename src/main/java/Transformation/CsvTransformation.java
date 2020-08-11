@@ -15,17 +15,41 @@ import java.io.IOException;
 
 public class CsvTransformation {
 
-    static String secondXml = "src/main/resources/config/xmlAfterXslt.xml";
-    static String csvTransform = "src/main/resources/xslt/csvTransformation.xslt";
-    static String csvFile = "src/main/resources/config/csvAfterXslt.csv";
+    String secondXml;
+    String csvTransform;
+    String csvFile;
 
-    public static void doTransformXlsToCsv() throws TransformerException, IOException, ParserConfigurationException, SAXException {
+    public String getSecondXml() {
+        return secondXml;
+    }
+
+    public void setSecondXml(String secondXml) {
+        this.secondXml = secondXml;
+    }
+
+    public String getCsvTransform() {
+        return csvTransform;
+    }
+
+    public void setCsvTransform(String csvTransform) {
+        this.csvTransform = csvTransform;
+    }
+
+    public String getCsvFile() {
+        return csvFile;
+    }
+
+    public void setCsvFile(String csvFile) {
+        this.csvFile = csvFile;
+    }
+
+    public void doTransformXlsToCsv() throws TransformerException, IOException, ParserConfigurationException, SAXException {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(secondXml);
-        StreamSource stylesource = new StreamSource(csvTransform);
-        Transformer transformer = TransformerFactory.newInstance().newTransformer(stylesource);
+        StreamSource streamSource = new StreamSource(csvTransform);
+        Transformer transformer = TransformerFactory.newInstance().newTransformer(streamSource);
         Source source = new DOMSource(document);
         Result outputTarget = new StreamResult(new File(csvFile));
         transformer.transform(source, outputTarget);

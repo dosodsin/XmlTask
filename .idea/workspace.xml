@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8ef5e5ba-78e5-4eaa-be92-0298c9670f98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DB/SqlConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB/SqlConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Transformation/CsvTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transformation/CsvTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Transformation/XmlBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transformation/XmlBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Transformation/XsltTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Transformation/XsltTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/outputFiles/csvAfterXslt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/csvAfterXslt.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/outputFiles/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/outputFiles/xmlAfterXslt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/xmlAfterXslt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/csvTransformation.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xslt/csvTransformation.xslt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xmlTransformation.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xslt/xmlTransformation.xslt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/csvAfterXslt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/outputFiles/csvAfterXslt.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/outputFiles/test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/xmlAfterXslt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/outputFiles/xmlAfterXslt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +57,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\resources\config" />
+      <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\outputFiles" />
+      <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\java\Transformation" />
       <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\resources\xslt" />
       <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\resources" />
-      <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\transformationFiles" />
-      <recent name="C:\Users\vlads\IdeaProjects\XmlTask\src\main\outputFiles" />
     </key>
   </component>
   <component name="RunManager">
@@ -93,6 +96,8 @@
       <workItem from="1597130172207" duration="2046000" />
       <workItem from="1597134229499" duration="20000" />
       <workItem from="1597134417370" duration="622000" />
+      <workItem from="1597135334742" duration="93000" />
+      <workItem from="1597141506026" duration="4872000" />
     </task>
     <servers />
   </component>
@@ -104,33 +109,41 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1477" y="173" key="#Project_Structure/0.0.2560.1040@0.0.2560.1040" timestamp="1596966004453" />
+    <state x="1706" y="213" key="#com.intellij.ide.util.MemberChooser" timestamp="1597148146561">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1706" y="213" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1597148146561" />
     <state x="1665" y="269" key="FileChooserDialogImpl" timestamp="1597134247116">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1665" y="269" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1597134247116" />
-    <state width="1277" height="263" key="GridCell.Tab.0.bottom" timestamp="1596969901303">
+    <state width="1230" height="263" key="GridCell.Tab.0.bottom" timestamp="1597148274961">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1277" height="263" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1596969901303" />
-    <state width="1277" height="263" key="GridCell.Tab.0.center" timestamp="1596969901303">
+    <state width="1230" height="263" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1597148274961" />
+    <state width="1230" height="263" key="GridCell.Tab.0.center" timestamp="1597148274961">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1277" height="263" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1596969901303" />
-    <state width="1277" height="263" key="GridCell.Tab.0.left" timestamp="1596969901302">
+    <state width="1230" height="263" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1597148274961" />
+    <state width="1230" height="263" key="GridCell.Tab.0.left" timestamp="1597148274961">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1277" height="263" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1596969901302" />
-    <state width="1277" height="263" key="GridCell.Tab.0.right" timestamp="1596969901303">
+    <state width="1230" height="263" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1597148274961" />
+    <state width="1230" height="263" key="GridCell.Tab.0.right" timestamp="1597148274961">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1277" height="263" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1596969901303" />
-    <state x="1388" y="156" key="SettingsEditor" timestamp="1596969777518">
+    <state width="1230" height="263" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1597148274961" />
+    <state x="1388" y="156" key="SettingsEditor" timestamp="1597146985743">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1388" y="156" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1596969777518" />
+    <state x="1388" y="156" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1597146985743" />
     <state x="1288" y="218" key="new project wizard" timestamp="1597045924839">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1288" y="218" key="new project wizard/0.0.2560.1040@0.0.2560.1040" timestamp="1597045924839" />
+    <state x="1581" y="212" key="spring file set editor" timestamp="1597144106298">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1581" y="212" key="spring file set editor/0.0.2560.1040@0.0.2560.1040" timestamp="1597144106298" />
   </component>
 </project>

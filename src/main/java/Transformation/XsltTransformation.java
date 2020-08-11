@@ -2,6 +2,7 @@ package Transformation;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
@@ -14,11 +15,35 @@ public class XsltTransformation {
 
     private static final Logger logger = LogManager.getLogger();
 
-    static String firstXml = "src/main/resources/config/test.xml";
-    static String xsltFile = "src/main/resources/xslt/xmlTransformation.xslt";
-    static String secondXml = "src/main/resources/config/xmlAfterXslt.xml";
+    String firstXml;
+    String xsltFile;
+    String secondXml;
 
-    public static void transformXmlFile() {
+    public String getFirstXml() {
+        return firstXml;
+    }
+
+    public void setFirstXml(String firstXml) {
+        this.firstXml = firstXml;
+    }
+
+    public String getXsltFile() {
+        return xsltFile;
+    }
+
+    public void setXsltFile(String xsltFile) {
+        this.xsltFile = xsltFile;
+    }
+
+    public String getSecondXml() {
+        return secondXml;
+    }
+
+    public void setSecondXml(String secondXml) {
+        this.secondXml = secondXml;
+    }
+
+    public  void transformXmlFile() {
 
         TransformerFactory factory = TransformerFactory.newInstance();
 
